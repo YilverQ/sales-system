@@ -1,0 +1,135 @@
+body{
+    background: url('../../img/login.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(10, 10, 10, .5);
+}
+.formLogin{
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border: 0.5px solid var(--gray);
+    border-top: 5px solid var(--main-color);
+    border-radius: var(--radius);
+    padding: 20px;
+    row-gap: .5em;
+}
+
+.iconUser{
+    font-size: 3em;
+    color: var(--main-color);
+}
+.formLogin__title{
+    font-size: 2em;
+}
+
+.form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.input-group{
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    margin: .8em 0;
+}
+.input-group--row{
+    flex-flow: row;
+    justify-content: space-around;
+}
+/* .input-group--eye{
+    
+} */
+.eye-form{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: .2em;
+}
+.eye-form i{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.label{
+    color: var(--main-color);
+}
+.input{
+    width: 100%;
+    border: .1em solid transparent;
+    border-bottom: .1em solid var(--main-color);
+    background: var(--light);
+    padding: .5em .3em;
+}
+.input:focus, .input:active{
+    border: .1em solid var(--main-color);
+}
+
+
+/*checkbox*/
+input[type="checkbox"] + label:before {
+	content: "";
+	width: 1em;
+	height: 1em;
+	float: left;
+	margin: 0 .8em 0 0; 
+    border: 2px solid #ccc;
+	background: #fff;
+}
+input[type="checkbox"]:checked + label:before {
+	border-color: #0fbf12;
+}
+input[type="checkbox"]:checked + label:after {
+    content: "";
+    width: 12px;
+    height: 6px;
+    border: 4px solid #0fbf12;
+    float: left;
+    margin-left: -1.95em;
+    border-right: 0;
+    border-top: 0;
+    margin-top: .2em;
+    transform: rotate(-55deg);
+}
+input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"] + label {
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label {
+    color: #0fbf12;
+}
+
+
+/*Buttom*/
+.input--button{
+    border-radius: var(--radius);
+    border: 2px solid var(--main-color);
+    background: var(--light);
+    color: var(--main-color);
+}
+.input--button:hover, .input--button:focus{
+    background: var(--main-color);
+    color: var(--light);
+}
+
+.input--disabled, .input--disabled:hover, 
+.input--disabled:focus{
+    border: 2px solid transparent;
+    color: var(--gray);
+    background: var(--light);
+}
+.input--error{
+    border: .1em solid var(--danger);
+}

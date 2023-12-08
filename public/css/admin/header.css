@@ -1,0 +1,47 @@
+.nav__input{display: none;}
+
+.header{
+	max-width: min(100%, 250px);
+	min-height: 100vh;
+	background: var(--main-color);
+	display: flex;
+	flex-flow: column;
+}
+
+.header__title{
+	font-size: 1.6em;
+	text-align: center;
+}
+
+.nav__item{}
+
+.mainItemList, .acordion__item{
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+.mainItemList{
+	padding: 5px;
+}
+.mainItemList:hover{
+	background: var(--light);
+
+}
+.mainItemList:hover .mainItemList__title{
+	color: var(--main-color);
+	font-weight: 700px;
+}
+.acordionItems{
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: .3s grid-template-rows;
+}
+
+.subItem{
+	overflow: hidden;
+}
+.nav__img{
+	display: block;
+	object-fit: cover;
+	width: 40px;
+}
